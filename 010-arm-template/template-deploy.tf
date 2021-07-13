@@ -1,6 +1,4 @@
-#############################################################################
 # DATA
-#############################################################################
 
 data "azurerm_subnet" "appservice" {
   name                 = "appservice"
@@ -8,9 +6,7 @@ data "azurerm_subnet" "appservice" {
   resource_group_name  = data.terraform_remote_state.networking.outputs.resource_group_name
 }
 
-#############################################################################
 # RESOURCES
-#############################################################################
 
 resource "azurerm_resource_group" "webapp" {
   name     = "${local.prefix}-webapp"
