@@ -1,0 +1,1 @@
+This repo contains implementation of terraform with Microsoft Azure Cloud.
